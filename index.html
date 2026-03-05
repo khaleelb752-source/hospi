@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CityCare Hospital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* General Styles */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#f4f7fb;
+}
+
+/* Header */
+
+header{
+background:#0077b6;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* Hero Section */
+
+.hero{
+background:url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
+background-size:cover;
+background-position:center;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:45px;
+background:rgba(0,0,0,0.5);
+padding:20px;
+}
+
+/* Sections */
+
+section{
+padding:60px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#023e8a;
+}
+
+/* Services */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+
+/* Doctors */
+
+.doctors{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.doctor{
+background:white;
+padding:20px;
+border-radius:10px;
+width:200px;
+text-align:center;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Appointment Form */
+
+form{
+max-width:500px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#0077b6;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#023e8a;
+}
+
+/* Footer */
+
+footer{
+background:#023e8a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>CityCare Hospital</h2>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Treatments</a>
+<a href="#doctors">Doctors</a>
+<a href="#appointment">Appointment</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- Home -->
+
+<section class="hero" id="home">
+<h1>Your Health Is Our Priority</h1>
+</section>
+
+<!-- About -->
+
+<section id="about">
+<h2>About Our Hospital</h2>
+<p style="text-align:center; max-width:700px; margin:auto;">
+CityCare Hospital provides high quality healthcare with modern medical technology.
+Our expert doctors and nurses ensure the best treatment for patients.
+We provide 24/7 emergency services and specialized treatments.
+</p>
+</section>
+
+<!-- Services -->
+
+<section id="services">
+<h2>Our Treatments</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Cardiology</h3>
+<p>Heart care and cardiovascular treatments.</p>
+</div>
+
+<div class="card">
+<h3>Neurology</h3>
+<p>Brain and nervous system treatments.</p>
+</div>
+
+<div class="card">
+<h3>Orthopedics</h3>
+<p>Bone and joint treatments.</p>
+</div>
+
+<div class="card">
+<h3>Pediatrics</h3>
+<p>Healthcare for infants and children.</p>
+</div>
+
+<div class="card">
+<h3>Emergency Care</h3>
+<p>24/7 emergency medical services.</p>
+</div>
+
+</div>
+</section>
+
+<!-- Doctors -->
+
+<section id="doctors">
+<h2>Our Doctors</h2>
+
+<div class="doctors">
+
+<div class="doctor">
+<h3>Dr. Ravi Kumar</h3>
+<p>Cardiologist</p>
+</div>
+
+<div class="doctor">
+<h3>Dr. Anjali Sharma</h3>
+<p>Neurologist</p>
+</div>
+
+<div class="doctor">
+<h3>Dr. Rajesh Patel</h3>
+<p>Orthopedic</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Appointment -->
+
+<section id="appointment">
+<h2>Book Appointment</h2>
+
+<form id="appointmentForm">
+
+<input type="text" placeholder="Patient Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="date" required>
+
+<select required>
+<option value="">Select Department</option>
+<option>Cardiology</option>
+<option>Neurology</option>
+<option>Orthopedics</option>
+<option>Pediatrics</option>
+</select>
+
+<button type="submit">Book Appointment</button>
+
+</form>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+<h2>Contact Us</h2>
+
+<p style="text-align:center">
+📍 CityCare Hospital, Bangalore<br>
+📞 +91 9876543210<br>
+📧 citycarehospital@gmail.com
+</p>
+
+</section>
+
+<footer>
+<p>© 2026 CityCare Hospital | All Rights Reserved</p>
+</footer>
+
+<script>
+
+/* Appointment Form */
+
+document.getElementById("appointmentForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+alert("Appointment Booked Successfully!");
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
